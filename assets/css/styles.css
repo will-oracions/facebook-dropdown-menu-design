@@ -36,13 +36,24 @@ nav .drop-btn i {
   cursor: pointer;
 }
 
+nav .wrapper .setting-drop,
+nav .wrapper .help-drop {
+  display: none;
+}
+nav .wrapper.show {
+  display: block;
+  display: flex;
+}
+
 nav .wrapper {
   position: absolute;
   top: 65px;
   display: flex;
-  width: 1400px;
+  width: 400px;
+  overflow: hidden;
   background-color: #242526;
   border-radius: 5px;
+  display: none;
 }
 
 nav .wrapper ul {
@@ -89,7 +100,7 @@ nav .wrapper ul li:hover a {
   font-size: 25px;
   pointer-events: none;
 }
-
+.wrapper .help-drop .arrow-back,
 .wrapper .setting-drop .arrow-back {
   padding-left: 10px;
   font-size: 20px;
@@ -98,6 +109,6 @@ nav .wrapper ul li:hover a {
   cursor: pointer;
 }
 
-.wrapper .setting-drop .arrow-back i {
+.wrapper .setting-drop .arrow-back i .wrapper .help-drop .arrow-back i {
   margin-right: 15px;
 }
