@@ -89,3 +89,15 @@ nav .wrapper ul li:hover a {
   font-size: 25px;
   pointer-events: none;
 }
+
+.wrapper .setting-drop .arrow-back {
+  padding-left: 10px;
+  font-size: 20px;
+  color: #b0b3b8;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper .setting-drop .arrow-back i {
+  margin-right: 15px;
+}
