@@ -8,7 +8,7 @@
 
 body {
   background-color: #18191a;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 nav {
@@ -56,10 +56,21 @@ nav .wrapper {
   display: none;
 }
 
+/* nav .wrapper::before {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 2px;
+  transform: rotate(45deg);
+} */
+
 nav .wrapper ul {
   list-style: none;
   width: 400px;
   padding: 10px;
+  transition: all 0.3s ease;
 }
 
 nav .wrapper li {
@@ -109,6 +120,7 @@ nav .wrapper ul li:hover a {
   cursor: pointer;
 }
 
-.wrapper .setting-drop .arrow-back i .wrapper .help-drop .arrow-back i {
+.wrapper .setting-drop .arrow-back i,
+.wrapper .help-drop .arrow-back i {
   margin-right: 15px;
 }
